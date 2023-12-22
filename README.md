@@ -1,3 +1,3 @@
 # run
 
-source .zshrc
+source ~/.zshrc

@@ -5,5 +5,6 @@ alias gco="git checkout"
 alias gcb="git checkout -b"
 alias gaa="git add ."
 alias wip="git add . && git commit -m 'wip'"
+alias gcm="git commit -m"
 
 alias art="php artisan"
