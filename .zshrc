@@ -18,4 +18,4 @@ alias p="pwd"
 alias ll="ls -la"
 alias ..="cd .."
 
-alias minios="minio server /Users/miguellopez/Documents/Projects/minio"
+alias minio="minio server /Users/miguellopez/Documents/Projects/minio"
