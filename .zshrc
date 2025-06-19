@@ -19,3 +19,5 @@ alias ll="ls -la"
 alias ..="cd .."
 
 alias minio="minio server /Users/miguellopez/Documents/Projects/minio"
+
+alias purge="sudo purge"
