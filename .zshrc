@@ -31,3 +31,10 @@ alias ..="cd .."
 alias minio="minio server /Users/miguellopez/Documents/Projects/minio"
 
 alias purge="sudo purge"
+
+# Windows with herd
+alias php='/c/Users/lopez/.config/herd/bin/php.bat'
+alias composer='/c/Users/lopez/.config/herd/bin/composer.bat'
+
+# yt-dlp
+alias ytd='/c/yt-dlp/yt-dlp.exe'
