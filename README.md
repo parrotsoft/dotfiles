@@ -179,3 +179,106 @@ config commit -m "Update zsh config"
 ```bash
 config push
 ```
+
+# Configuración de Git
+
+Este repositorio utiliza una configuración híbrida para Git:
+
+- `.gitconfig` → configuración común versionada
+- `.gitconfig.local` → configuración privada/local NO versionada
+- `.gitconfig.local.example` → ejemplo de configuración local
+
+---
+
+## `.gitconfig`
+
+Archivo principal compartido entre todas las máquinas.
+
+```ini
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+
+[user]
+	name = Miguel Lopez Ariza
+
+[init]
+	defaultBranch = master
+
+[include]
+	path = .gitconfig.local
+```
+
+---
+
+## `.gitconfig.local`
+
+Archivo local privado para cada máquina.
+
+Ejemplo:
+
+```ini
+[user]
+	email = lopezarizamiguel@gmail.com
+```
+
+Este archivo NO debe versionarse.
+
+---
+
+## `.gitconfig.local.example`
+
+Archivo de referencia incluido en el repositorio.
+
+```ini
+[user]
+	email = lopezarizamiguel@gmail.com
+```
+
+---
+
+# Configurar Git en una nueva máquina
+
+## 1. Copiar archivo de ejemplo
+
+```bash
+cp ~/.gitconfig.local.example ~/.gitconfig.local
+```
+
+---
+
+## 2. Ajustar email
+
+Editar:
+
+```bash
+~/.gitconfig.local
+```
+
+---
+
+## 3. Verificar configuración cargada
+
+```bash
+git config user.email
+```
+
+---
+
+## 4. Ver configuración completa y origen
+
+```bash
+git config --list --show-origin
+```
+
+---
+
+# Ignorar configuración privada
+
+Agregar al `.gitignore`:
+
+```gitignore
+.gitconfig.local
+```
