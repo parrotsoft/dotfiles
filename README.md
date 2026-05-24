@@ -17,7 +17,7 @@ git init --bare $HOME/.cfg
 ## 2. Crear alias `config`
 
 ```bash
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 ```
 
 ---
@@ -37,13 +37,13 @@ Esto evita que Git muestre todos los archivos del HOME.
 ### Zsh
 
 ```bash
-echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.zshrc
+echo 'alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"' >> $HOME/.zshrc
 ```
 
 ### Bash
 
 ```bash
-echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
+echo 'alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"' >> $HOME/.bashrc
 ```
 
 ---
@@ -51,7 +51,7 @@ echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $H
 ## 5. Ignorar el repositorio bare
 
 ```bash
-echo ".cfg" >> $HOME/.gitignore
+echo ".cfg/" >> $HOME/.gitignore
 ```
 
 ---
@@ -62,6 +62,7 @@ echo ".cfg" >> $HOME/.gitignore
 config add .gitignore
 config add .zshrc
 config add .gitconfig
+config add .gitconfig.local.example
 ```
 
 ---
@@ -103,7 +104,7 @@ git clone --bare git@github.com:parrotsoft/dotfiles.git $HOME/.cfg
 ## 2. Crear alias temporal
 
 ```bash
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 ```
 
 ---
@@ -111,7 +112,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 ## 3. Ignorar el repositorio bare
 
 ```bash
-echo ".cfg" >> $HOME/.gitignore
+echo ".cfg/" >> $HOME/.gitignore
 ```
 
 ---
@@ -137,13 +138,13 @@ config config --local status.showUntrackedFiles no
 ### Zsh
 
 ```bash
-echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.zshrc
+echo 'alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"' >> $HOME/.zshrc
 ```
 
 ### Bash
 
 ```bash
-echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
+echo 'alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"' >> $HOME/.bashrc
 ```
 
 ---
@@ -179,6 +180,8 @@ config commit -m "Update zsh config"
 ```bash
 config push
 ```
+
+---
 
 # Configuración de Git
 
@@ -254,7 +257,7 @@ cp ~/.gitconfig.local.example ~/.gitconfig.local
 Editar:
 
 ```bash
-~/.gitconfig.local
+nano ~/.gitconfig.local
 ```
 
 ---

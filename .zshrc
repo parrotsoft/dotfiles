@@ -143,7 +143,7 @@ export PATH=$HOME/bin:~/.config/phpmon/bin:$PATH
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 
-. "$HOME/.local/bin/env"
+[ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 export PATH="/opt/homebrew/sbin:$PATH"
 . "$HOME/.cargo/env"
 alias config='/usr/bin/git --git-dir=/Users/mlopeza/.cfg/ --work-tree=/Users/mlopeza'
