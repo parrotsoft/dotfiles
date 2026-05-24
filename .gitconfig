@@ -5,6 +5,8 @@
 	process = git-lfs filter-process
 [user]
 	name = Miguel Lopez Ariza
-	email = lopezarizamiguel@gmail.com
 [init]
-	defaultBranch = master
+	defaultBranch = master	
+[include]
+	path = .gitconfig.local
+
