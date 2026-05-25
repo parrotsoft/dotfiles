@@ -382,3 +382,31 @@ workspaceStorage
 globalStorage
 logs
 ```
+
+---
+
+# Configuración de Homebrew
+
+Configuración y respaldo de paquetes instalados con :contentReference[oaicite:0]{index=0} usando `Brewfile`.
+
+---
+
+# Exportar configuración actual
+
+```bash
+brew bundle dump --force
+```
+
+Esto genera automáticamente:
+
+```plaintext
+~/Brewfile
+```
+
+---
+
+# Restaurar paquetes en otra máquina
+
+```bash
+brew bundle
+```
