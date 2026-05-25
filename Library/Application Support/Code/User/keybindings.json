@@ -54,14 +54,6 @@
         "when": "workbench.scm.active"
     },
     {
-        "key": "cmd+2",
-        "command": "-workbench.action.focusSecondEditorGroup"
-    },
-    {
-        "key": "cmd+2",
-        "command": "workbench.view.extension.github-cweijan-mysql"
-    },
-    {
         "key": "cmd+5",
         "command": "-workbench.view.debug",
         "when": "editorFocus && viewContainer.workbench.view.debug.enabled"
@@ -89,7 +81,11 @@
         "command": "workbench.panel.chat"
     },
     {
-        "key": "cmd+2",
+        "key": "cmd+4",
         "command": "github.cweijan.mysql.toggleVisibility"
-    }
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.toggleSidebarVisibility",
+    },
 ]
