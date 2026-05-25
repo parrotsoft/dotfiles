@@ -285,3 +285,100 @@ Agregar al `.gitignore`:
 ```gitignore
 .gitconfig.local
 ```
+
+
+---
+
+# Configuración de Visual Studio Code
+
+Configuración de :contentReference[oaicite:0]{index=0} incluida dentro de los dotfiles.
+
+---
+
+# Ubicación de la configuración en macOS
+
+```bash
+cd "$HOME/Library/Application Support/Code/User"
+```
+
+---
+
+# Agregar configuración al repositorio
+
+## Settings
+
+```bash
+config add "$HOME/Library/Application Support/Code/User/settings.json"
+```
+
+---
+
+## Keybindings
+
+```bash
+config add "$HOME/Library/Application Support/Code/User/keybindings.json"
+```
+
+---
+
+# Exportar extensiones instaladas
+
+```bash
+code --list-extensions > ~/vscode-extensions.txt
+```
+
+Agregar archivo al repositorio:
+
+```bash
+config add ~/vscode-extensions.txt
+```
+
+---
+
+# Instalar extensiones en otra máquina
+
+```bash
+cat ~/vscode-extensions.txt | xargs -L 1 code --install-extension
+```
+
+---
+
+# Verificar comando `code`
+
+Si el comando `code` no existe:
+
+```bash
+code --version
+```
+
+Abrir Visual Studio Code y ejecutar:
+
+```plaintext
+Cmd + Shift + P
+```
+
+Buscar:
+
+```plaintext
+Shell Command: Install 'code' command in PATH
+```
+
+---
+
+# Archivos recomendados para versionar
+
+```plaintext
+settings.json
+keybindings.json
+vscode-extensions.txt
+```
+
+---
+
+# Archivos NO recomendados para versionar
+
+```plaintext
+workspaceStorage
+globalStorage
+logs
+```

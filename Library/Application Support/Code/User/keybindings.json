@@ -1,0 +1,95 @@
+// Coloque sus atajos de teclado en este archivo para sobreescribir los valores predeterminados
+[
+    {
+        "key": "cmd+3",
+        "command": "-workbench.action.toggleSidebarVisibility",
+        "when": "searchViewletVisible"
+    },
+    {
+        "key": "cmd+3",
+        "command": "-workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "cmd+3",
+        "command": "-workbench.view.search",
+        "when": "workbench.view.search.active && !searchViewletVisible"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "-workbench.action.terminal.openNativeConsole",
+        "when": "!isSessionsWindow && !terminalFocus"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "cmd+4",
+        "command": "-workbench.action.focusFourthEditorGroup"
+    },
+    {
+        "key": "cmd+4",
+        "command": "workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
+        "key": "cmd+2",
+        "command": "-workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.view.extension.github-cweijan-mysql"
+    },
+    {
+        "key": "cmd+5",
+        "command": "-workbench.view.debug",
+        "when": "editorFocus && viewContainer.workbench.view.debug.enabled"
+    },
+    {
+        "key": "cmd+5",
+        "command": "-workbench.action.focusFifthEditorGroup"
+    },
+    {
+        "key": "cmd+5",
+        "command": "-workbench.action.toggleSidebarVisibility",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "-workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "cmd+5",
+        "command": "workbench.panel.chat.view.copilot.toggleVisibility"
+    },
+    {
+        "key": "cmd+5",
+        "command": "workbench.panel.chat"
+    },
+    {
+        "key": "cmd+2",
+        "command": "github.cweijan.mysql.toggleVisibility"
+    }
+]

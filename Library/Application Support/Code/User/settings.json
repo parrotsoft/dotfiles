@@ -1,0 +1,50 @@
+{
+  "[python]": {
+    "editor.formatOnType": true
+},
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "explorer.confirmDelete": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "workbench.editor.enablePreview": false,
+  "editor.minimap.size": "fill",
+  "editor.minimap.enabled": false,
+"workbench.startupEditor": "none",
+"files.autoSave": "afterDelay",
+"git.confirmSync": false,
+"git.ignoreMissingGitWarning": true,
+"terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+"python.analysis.typeCheckingMode": "basic",
+"git.autofetch": true,
+"containers.containerClient": "com.microsoft.visualstudio.containers.podman",
+"terminal.integrated.defaultProfile.windows": "Git Bash",
+"workbench.iconTheme": "vscode-jetbrains-icon-theme",
+"editor.fontSize": 18,
+"github.copilot.enable": {
+  "*": true,
+  "plaintext": false,
+  "markdown": false,
+  "scminput": false,
+  "python": false,
+  "php": false
+},
+"editor.parameterHints.enabled": false,
+"workbench.editorAssociations": {
+  "*.copilotmd": "vscode.markdown.preview.editor",
+  "*.pdf": "default"
+},
+"chat.mcp.discovery.enabled": {
+  "claude-desktop": true
+},
+"editor.stickyScroll.enabled": false,
+"javascript.updateImportsOnFileMove.enabled": "always",
+"security.workspace.trust.untrustedFiles": "open",
+"chat.viewSessions.orientation": "stacked",
+"chat.mcp.gallery.enabled": true,
+"gitlens.ai.model": "vscode",
+"gitlens.ai.vscode.model": "copilot:gpt-4.1"
+}
