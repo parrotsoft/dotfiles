@@ -5,6 +5,8 @@ tap "shivammathur/php", trusted: true
 brew "php"
 # Dependency Manager for PHP
 brew "composer"
+# Terminal countdown timer
+brew "countdown"
 # Lightweight DNS forwarder and DHCP server
 brew "dnsmasq"
 # Like neofetch, but much faster because written mostly in C
