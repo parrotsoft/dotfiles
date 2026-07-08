@@ -148,3 +148,8 @@ export PATH="/opt/homebrew/sbin:$PATH"
 . "$HOME/.cargo/env"
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
+
+if [[ $- == *i* ]] && [[ -z "$SSH_CONNECTION" ]]; then
+    fastfetch
+fi
