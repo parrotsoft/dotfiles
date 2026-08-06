@@ -23,6 +23,8 @@ brew "ollama"
 brew "php@8.2"
 # CLI for Playwright: record/generate code, inspect selectors, take screenshots
 brew "playwright-cli"
+# The AI coding agent built for the terminal.
+brew "anomalyco/tap/opencode", trusted: true
 # General-purpose scripting language
 brew "shivammathur/php/php"
 # General-purpose scripting language
@@ -61,6 +63,8 @@ cask "opencode-desktop"
 cask "phpstorm"
 # Collaboration platform for API development
 cask "postman"
+# Team communication and collaboration software
+cask "slack"
 # Messaging app with a focus on speed and security
 cask "telegram"
 # Open-source code editor
@@ -91,6 +95,9 @@ vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-python.vscode-python-envs"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode.remote-explorer"
 vscode "naoray.laravel-goto-components"
 vscode "onecentlin.laravel-blade"
 vscode "onecentlin.laravel-extension-pack"
